@@ -1,0 +1,47 @@
+@import url("../../App.css");
+
+.navbarMobile {
+  display: flex;
+  width: 100%;
+  height: 8rem;
+}
+
+.navMobileHamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100%;
+  width: 6.5rem;
+}
+
+.hamburgerLine::before,
+.hamburgerLine::after,
+.hamburgerLine {
+  outline: none;
+}
+
+.hamburgerLine {
+  height: 2px;
+  width: 50%;
+  position: relative;
+
+  background-color: #ccc;
+}
+
+.hamburgerLine::before,
+.hamburgerLine::after {
+  content: "";
+  position: absolute;
+  top: -1rem;
+  left: 0;
+
+  height: 2px;
+  width: 100%;
+
+  background-color: #ccc;
+}
+
+.hamburgerLine::after {
+  top: 1rem;
+}

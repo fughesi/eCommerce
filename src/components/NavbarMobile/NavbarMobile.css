@@ -3,34 +3,36 @@
 .navbarMobile {
   display: flex;
   width: 100%;
-  height: 8rem;
+  height: 7rem;
+
+  padding: 1.25rem;
+  align-items: center;
 }
 
 .navMobileHamburger {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 
+  margin: auto auto auto 1em;
   height: 100%;
-  width: 6.5rem;
+  width: 6rem;
+  cursor: pointer;
 }
 
-.hamburgerLine::before,
-.hamburgerLine::after,
-.hamburgerLine {
-  outline: none;
-}
-
-.hamburgerLine {
+.hamburgerClosed,
+.hamburgerOpen {
   height: 2px;
-  width: 50%;
+  width: 45%;
   position: relative;
 
   background-color: #ccc;
+  transition: 1500ms ease-in-out;
 }
 
-.hamburgerLine::before,
-.hamburgerLine::after {
+.hamburgerClosed::before,
+.hamburgerClosed::after,
+.hamburgerOpen::before {
   content: "";
   position: absolute;
   top: -1rem;
@@ -42,6 +44,32 @@
   background-color: #ccc;
 }
 
-.hamburgerLine::after {
+.hamburgerClosed::after {
   top: 1rem;
+}
+
+.hamburgerOpen {
+  transform: rotate(405deg);
+}
+
+.hamburgerOpen::before {
+  transform: rotate(-90deg);
+  top: 0;
+}
+
+.navSection {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.homeLinkNav h3 {
+  font-size: var(--p1);
+  margin: 0;
+}
+
+.navbarCart {
+  margin-right: 1rem;
+  width: clamp(1.6rem, 1.3095rem + 1.4524vw, 3.125rem);
 }

@@ -1,5 +1,27 @@
 @import url(../../App.css);
 
 .indexPageMain {
-font-size: 5rem;
+  font-size: 5rem;
+  transition: 1500ms ease-in-out;
+}
+
+.searchLabel {
+  position: relative;
+}
+
+.searchLabel::before {
+  content: "";
+  position: absolute;
+  top: 0%;
+  left: 80%;
+  width: 25px;
+  background: red;
+
+/* background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20.33 20.33' fill-rule='evenodd'%3E%3Cpath d='M16.036 18.455l2.404-2.405 5.586 5.587-2.404 2.404zM8.5 2C12.1 2 15 4.9 15 8.5S12.1 15 8.5 15 2 12.1 2 8.5 4.9 2 8.5 2zm0-2C3.8 0 0 3.8 0 8.5S3.8 17 8.5 17 17 13.2 17 8.5 13.2 0 8.5 0zM15 16a1 1 0 1 1 2 0 1 1 0 1 1-2 0'%3E%3C/path%3E%3C/svg%3E") center / contain no-repeat; */
+background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='25' height='25' viewBox='0 0 20.33 20.33' d='M20.24,19.76l-6.35-6.35c1.31-1.42,2.12-3.32,2.12-5.41C16,3.58,12.42,0,8,0S0,3.58,0,8s3.58,8,8,8c2.09,0,3.99-.81,5.41-2.12l6.35,6.35c.07,.07,.15,.1,.24,.1s.17-.03,.24-.1c.13-.13,.13-.34,0-.47ZM.67,8C.67,3.96,3.96,.67,8,.67s7.33,3.29,7.33,7.33-3.29,7.33-7.33,7.33S.67,12.04,.67,8Z' d='M6.5,1.76c-1.11,.31-2.04,1.04-2.6,2.05-.09,.16-.03,.36,.13,.45,.05,.03,.11,.04,.16,.04,.12,0,.23-.06,.29-.17,.99-1.76,3.23-2.4,4.99-1.41,.16,.09,.36,.03,.45-.13,.09-.16,.03-.36-.13-.45-1.01-.57-2.18-.7-3.29-.39Z'") center / contain no-repeat;
+}
+
+.blur {
+  filter: blur(var(--blur));
+  transition: 1500ms ease-in-out;
 }

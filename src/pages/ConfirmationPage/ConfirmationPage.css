@@ -1,1 +1,6 @@
 @import url('../../App.css');
+
+.blur {
+    filter: blur(var(--blur));
+    transition: 1500ms ease-in-out;
+  }

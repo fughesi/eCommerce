@@ -1,12 +1,13 @@
 import { useState, createContext, useContext, ReactNode } from "react";
 
-type formDataState = {
+interface formDataState {
   firstName: string;
   lastName: string;
   eMail: string | number;
   formData: {};
   setFormData?: () => {};
-};
+  getFormData: () => void;
+} ;
 
 type childType = {
   children: ReactNode;
@@ -23,17 +24,19 @@ export function FormDataProvider({ children }: childType) {
     firstName: "",
     lastName: "",
     eMail: "",
-  });
+  } );
 
   function getFormData(e) {
-    const data = e.target.value
+    const data = e.target.value;
     setFormData((i) => {
-        return ({...i, data["name"]: data})
+      return { ...i, ["name"]: data };
     });
   }
 
   return (
-    <FormDataContext.Provider value={{ firstName, lastName, eMail, formData }}>
+    <FormDataContext.Provider
+      value={{ formData, setFormData, getFormData } }
+    >
       {children}
     </FormDataContext.Provider>
   );

@@ -14,7 +14,6 @@ const IndexPage = () => {
   const { blur } = useNavContext();
   const { search, useSearchBar } = useSearchContext();
 
-  console.log(search);
   return (
     <main className={`indexPageMain ${blur ? "blur" : ""}`}>
       <section>

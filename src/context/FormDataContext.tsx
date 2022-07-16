@@ -1,11 +1,21 @@
-import { useState, createContext, useContext, ReactNode } from "react";
+import {
+  useState,
+  createContext,
+  useContext,
+  ReactNode,
+  ChangeEvent
+} from "react";
 
-type formDataState = {
+interface formDataState {
   firstName: string;
   lastName: string;
-  eMail: string | number;
+  eMail: string;
+}
+
+type formDataProps = {
   formData: {};
-  setFormData?: () => {};
+  getFormData: () => {};
+  
 };
 
 type childType = {
@@ -25,15 +35,15 @@ export function FormDataProvider({ children }: childType) {
     eMail: "",
   });
 
-  function getFormData(e) {
-    const data = e.target.value
+  function getFormData(e:  ChangeEvent<HTMLInputElement>): void {
+    const data = e.target.value;
     setFormData((i) => {
-        return ({...i, data["name"]: data})
+      return { ...i, ["name"]: data };
     });
   }
 
   return (
-    <FormDataContext.Provider value={{ firstName, lastName, eMail, formData }}>
+    <FormDataContext.Provider value={{ formData, setFormData, getFormData }}>
       {children}
     </FormDataContext.Provider>
   );

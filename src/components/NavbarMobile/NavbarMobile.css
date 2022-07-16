@@ -27,7 +27,7 @@
   position: relative;
 
   background-color: #ccc;
-  transition: 1500ms ease-in-out;
+  transition: 1500ms ease-out;
 }
 
 .hamburgerClosed::before,

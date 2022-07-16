@@ -3,20 +3,20 @@ import {
   createContext,
   useContext,
   ReactNode,
-  ChangeEvent
+  ChangeEvent,
 } from "react";
 
-interface formDataState {
+type formDataState = {
+  formData: formDataValues;
+  setFormData?: () => {};
+  getFormData: (e: ChangeEvent<HTMLInputElement>) => void;
+};
+
+interface formDataValues {
   firstName: string;
   lastName: string;
   eMail: string;
 }
-
-type formDataProps = {
-  formData: {};
-  setFormData?: () => {};
-  getFormData: () => void;
-} ;
 
 type childType = {
   children: ReactNode;
@@ -33,17 +33,18 @@ export function FormDataProvider({ children }: childType) {
     firstName: "",
     lastName: "",
     eMail: "",
-  } );
+  });
 
-  function getFormData(e:  ChangeEvent<HTMLInputElement>): void {
+  function getFormData(e: ChangeEvent<HTMLInputElement>): void {
     const data = e.target.value;
     setFormData((i) => {
       return { ...i, ["name"]: data };
     });
   }
+  console.log(getFormData);
 
   return (
-    <FormDataContext.Provider value={{ formData, setFormData, getFormData }}>
+    <FormDataContext.Provider value={{ formData, getFormData }}>
       {children}
     </FormDataContext.Provider>
   );

@@ -43,8 +43,6 @@ export function FormDataProvider({ children }: childType) {
   }
 
   return (
-    <FormDataContext.Provider value={{ , setFormData, getFormData }}>
-      {children}
-    </FormDataContext.Provider>
+
   );
 }

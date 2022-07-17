@@ -15,7 +15,7 @@ type formDataState = {
 interface formDataValues {
   firstName: string | undefined;
   lastName: string | undefined;
-  phoneNumber: number | undefined
+  phoneNumber: number | undefined;
   eMail: string | undefined;
 }
 
@@ -43,7 +43,6 @@ export function FormDataProvider({ children }: childType) {
       return { ...i, [name]: value };
     });
   }
-  console.log(formData);
 
   return (
     <FormDataContext.Provider value={{ formData, getFormData }}>

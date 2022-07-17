@@ -8,7 +8,7 @@
   --p2: clamp(1.5rem, 1.2619rem + 1.1905vw, 2.75rem);
 
   /* BLUR */
-  --blur: 5px;
+  --blur: 1.75px;
 }
 
 .AppMain {
@@ -34,4 +34,13 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: unset;
+}
+
+button {
+  outline: none;
+  border: none;
+  border-radius: 0.4em;
+
+  padding: .5rem;
+  aspect-ratio: 2.2/1;
 }

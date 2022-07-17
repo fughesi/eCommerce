@@ -3,19 +3,20 @@ import {
   createContext,
   useContext,
   ReactNode,
-  ChangeEvent,
+  SyntheticEvent,
 } from "react";
 
 type formDataState = {
   formData: formDataValues;
   setFormData?: () => {};
-  getFormData: (e: ChangeEvent<HTMLInputElement>) => void;
+  getFormData: (e: SyntheticEvent<HTMLInputElement>) => void;
 };
 
 interface formDataValues {
-  firstName: string;
-  lastName: string;
-  eMail: string;
+  firstName: string | undefined;
+  lastName: string | undefined;
+  phoneNumber: number | undefined
+  eMail: string | undefined;
 }
 
 type childType = {
@@ -33,15 +34,16 @@ export function FormDataProvider({ children }: childType) {
     firstName: "",
     lastName: "",
     eMail: "",
+    phoneNumber: undefined,
   });
 
-  function getFormData(e: ChangeEvent<HTMLInputElement>): void {
-    const data = e.target.value;
-    setFormData((i) => {
-      return { ...i, ["name"]: data };
+  function getFormData(e: SyntheticEvent<HTMLInputElement>): void {
+    const { name, value } = e.currentTarget;
+    return setFormData((i) => {
+      return { ...i, [name]: value };
     });
   }
-  console.log(getFormData);
+  console.log(formData);
 
   return (
     <FormDataContext.Provider value={{ formData, getFormData }}>

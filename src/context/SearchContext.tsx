@@ -1,10 +1,10 @@
-import { useState, createContext, useContext } from "react";
+import { useState, createContext, useContext, SyntheticEvent } from "react";
 
 type SearchContextProps = {
-  search: string | number;
-  SearchText?: string | number
+  search: string;
+  SearchText?: string | number;
   useSearch?: () => void;
-  useSearchBar: (SearchText: string | number) => void;
+  useSearchBar: (e: SyntheticEvent<HTMLInputElement>) => void;
 };
 
 type childProps = {
@@ -20,9 +20,8 @@ export function useSearchContext() {
 export const SearchContextProvider = ({ children }: childProps) => {
   const [search, setSearch] = useState("");
 
-  function useSearchBar() {
-    console.log("things and stuff")
-    return setSearch((i) => i);
+  function useSearchBar(e: SyntheticEvent<HTMLInputElement>): void {
+    return setSearch(e.currentTarget["value"]);
   }
 
   return (

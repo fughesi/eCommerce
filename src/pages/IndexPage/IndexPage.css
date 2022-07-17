@@ -3,10 +3,12 @@
 .indexPageMain {
   font-size: 5rem;
   transition: 1500ms ease-in-out;
+  height: 250vh;
 }
 
 .searchLabel {
   position: relative;
+  width: 80px;
 }
 
 .searchLabel::before {

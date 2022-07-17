@@ -27,7 +27,7 @@
   position: relative;
 
   background-color: #ccc;
-  transition: 1500ms ease-out;
+  transition: 1000ms ease-out;
 }
 
 .hamburgerClosed::before,
@@ -42,19 +42,23 @@
   width: 100%;
 
   background-color: #ccc;
+  transition: 1000ms;
 }
 
 .hamburgerClosed::after {
+  animation: navbarElementInvisible 200ms forwards;
   top: 1rem;
 }
 
 .hamburgerOpen {
-  transform: rotate(405deg);
+  transform: rotate(-45deg);
+  transition: 1500ms;
 }
 
 .hamburgerOpen::before {
-  transform: rotate(-90deg);
   top: 0;
+  transform: rotate(-90deg);
+  transition: 1000ms;
 }
 
 .navSection {
@@ -72,4 +76,14 @@
 .navbarCart {
   margin-right: 1rem;
   width: clamp(1.6rem, 1.3095rem + 1.4524vw, 3.125rem);
+}
+
+/* ANIMATIONS */
+@keyframes navbarElementInvisible {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

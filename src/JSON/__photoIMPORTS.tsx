@@ -1,4 +1,4 @@
-const IMG: {} = {
+const IMG = {
   //charicatureGraphics ---------------------------------------------
 
   AstronautIceCream: ("../resources/graphics/charicatureGraphics/Astronaut Ice Cream.png"),
@@ -230,7 +230,6 @@ const IMG: {} = {
   GoodIdea: ("../resources/graphics/randomGraphics/Good Idea.png"),
   GramophoneDonut: ("../resources/graphics/randomGraphics/Gramophone Donut.png"),
   GreenMonster: ("../resources/graphics/randomGraphics/Green Monster.png"),
-  // eslint-disable-next-line
   GrenadeMan: ("../resources/graphics/randomGraphics/Grenade.png"),
   HandOfRevolution: ("../resources/graphics/randomGraphics/Hand Of Revolution.png"),
   HandOfZombies: ("../resources/graphics/randomGraphics/Hand Of Zombies.png"),
@@ -287,28 +286,29 @@ const IMG: {} = {
 
   //BlackHistoryGraphics ---------------------------------------------
 
-  BHM365Days: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONT 365 DAYS.png"),
-  BHMMalcolmX: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MALCOLM X.png"),
-  BHMMap: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MAP.png"),
-  BHMMLK: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MLK.png"),
-  BHMPowerHand: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH POWER HAND.png"),
-  BHM: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH.png"),
-  BH: ("../resources/graphics/BlackHistoryGraphics/BLACK HISTORY.png"),
-  BLMHand: ("../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER HAND.png"),
-  MartinLutherJunior: ("../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER Martin Luther Junior.png"),
-  BLMMLK: ("../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER MLK.png"),
-  BlackLivesMatter: ("../resources/graphics/BlackHistoryGraphics/BLACKLIVESMATTER.png"),
-  DreamBH: ("../resources/graphics/BlackHistoryGraphics/DREAM.png"),
-  EnoughIsEnough: ("../resources/graphics/BlackHistoryGraphics/ENOUGH IS ENOUGH.png"),
-  FightForChange: ("../resources/graphics/BlackHistoryGraphics/FIGHT FOR CHANGE.png"),
-  FrederickDouglass: ("../resources/graphics/BlackHistoryGraphics/FREDERICK DOUGLASS.png"),
-  FreedomBH: ("../resources/graphics/BlackHistoryGraphics/FREEDOM.png"),
-  JohnLewis: ("../resources/graphics/BlackHistoryGraphics/JOHN LEWIS.png"),
-  EveryMonthBH: ("../resources/graphics/BlackHistoryGraphics/MAKE EVERY MONTH BLACK HISTORY MONTH.png"),
-  MalcolmXBH: ("../resources/graphics/BlackHistoryGraphics/MALCOLM X BLACK HISTORY.png"),
-  MLKBH: ("../resources/graphics/BlackHistoryGraphics/MARTIN LUTHER KING BLACK HISTORY.png"),
-  Riot: ("../resources/graphics/BlackHistoryGraphics/RIOT.png"),
-  WeCanDoAll: ("../resources/graphics/BlackHistoryGraphics/WE CAN DO IT.png"),
+  // BHM365Days: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONT 365 DAYS.png",
+  BHM365Days: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONT 365 DAYS.png",
+  BHMMalcolmX: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MALCOLM X.png",
+  BHMMap: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MAP.png",
+  BHMMLK: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH MLK.png",
+  BHMPowerHand: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH POWER HAND.png",
+  BHM: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY MONTH.png",
+  BH: "../resources/graphics/BlackHistoryGraphics/BLACK HISTORY.png",
+  BLMHand: "../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER HAND.png",
+  MartinLutherJunior: "../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER Martin Luther Junior.png",
+  BLMMLK: "../resources/graphics/BlackHistoryGraphics/BLACK LIVES MATTER MLK.png",
+  BlackLivesMatter: "../resources/graphics/BlackHistoryGraphics/BLACKLIVESMATTER.png",
+  DreamBH: "../resources/graphics/BlackHistoryGraphics/DREAM.png",
+  EnoughIsEnough: "../resources/graphics/BlackHistoryGraphics/ENOUGH IS ENOUGH.png",
+  FightForChange: "../resources/graphics/BlackHistoryGraphics/FIGHT FOR CHANGE.png",
+  FrederickDouglass: "../resources/graphics/BlackHistoryGraphics/FREDERICK DOUGLASS.png",
+  FreedomBH: "../resources/graphics/BlackHistoryGraphics/FREEDOM.png",
+  JohnLewis: "../resources/graphics/BlackHistoryGraphics/JOHN LEWIS.png",
+  EveryMonthBH: "../resources/graphics/BlackHistoryGraphics/MAKE EVERY MONTH BLACK HISTORY MONTH.png",
+  MalcolmXBH: "../resources/graphics/BlackHistoryGraphics/MALCOLM X BLACK HISTORY.png",
+  MLKBH: "../resources/graphics/BlackHistoryGraphics/MARTIN LUTHER KING BLACK HISTORY.png",
+  Riot: "../resources/graphics/BlackHistoryGraphics/RIOT.png",
+  WeCanDoAll: "../resources/graphics/BlackHistoryGraphics/WE CAN DO IT.png",
 
   //CartoonGraphics ---------------------------------------------
 

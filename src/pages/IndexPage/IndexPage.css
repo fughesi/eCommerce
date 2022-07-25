@@ -1,14 +1,53 @@
-@import url(../../App.css);
-
 .indexPageMain {
-  font-size: 5rem;
+  display: grid;
+  min-height: 100vh;
+  width: 100vw;
+  padding: 1rem;
+  place-items: center;
+
   transition: 1000ms ease-in-out;
-  height: 250vh;
+}
+.indexPageMain > section {
+  width: 100%;
 }
 
 .indexTopCardSection {
-  background-color: aliceblue;
-  font-size: small;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.things,
+.indexTopCardSection input {
+  width: 100%;
+  border-radius: var(--rad1);
+  background-color: var(--color2);
+}
+
+.things {
+  aspect-ratio: 1/0.5;
+}
+
+.monkey {
+  animation: float 5s ease-in-out infinite;
+  filter: drop-shadow(22px);
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+.indexTopCardSection input {
+  border: 0;
+  padding: 1rem;
 }
 
 .indexFilterSection {

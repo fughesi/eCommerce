@@ -1,4 +1,4 @@
-@import url("../../App.css");
+
 
 .navbarMobile {
   display: flex;
@@ -23,7 +23,7 @@
 .hamburgerClosed,
 .hamburgerOpen {
   height: 2px;
-  width: 45%;
+  width: 35%;
   position: relative;
 
   background-color: #ccc;
@@ -35,7 +35,7 @@
 .hamburgerOpen::before {
   content: "";
   position: absolute;
-  top: -1rem;
+  top: -.6rem;
   left: 0;
 
   height: 2px;
@@ -47,7 +47,7 @@
 
 .hamburgerClosed::after {
   animation: navbarElementInvisible 200ms forwards;
-  top: 1rem;
+  top: .6rem;
 }
 
 .hamburgerOpen {

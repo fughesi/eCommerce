@@ -1,7 +1,8 @@
 import { useNavContext } from "../../context/NavbarContext";
 import { useThemeContext } from "../../context/ThemeContext";
+import MonkeyHead from "../../resources/logos/MonkeyHead";
+import Search from "../../resources/icons/Search";
 import "./IndexPage.css";
-import React, { useRef } from "react";
 
 const IndexPage = () => {
   const { blur } = useNavContext();
@@ -13,12 +14,29 @@ const IndexPage = () => {
         className="indexTopCardSection"
         aria-label="top photo and searchbar"
       >
-        <div>put photo here</div>
-        <div>put searchbar here</div>
+        <div className="things">
+          <MonkeyHead className="monkey" />
+        </div>
+        <input type="search" placeholder="Search..." />
       </section>
 
       <section className="indexFilterSection" aria-label="popular now filter">
-        <div>popular now selector goes here</div>
+        <input type="text" list="data" />
+        <datalist id="data">
+          <option value="things" />
+          <option value="stuff" />
+          <option value="mooch" />
+          <option value="tits" />
+          <option value="hablo" />
+        </datalist>
+<map>tit</map>
+        <form>
+          <label htmlFor="vol">Volume (between 0 and 50):</label>
+          <input type="range" id="vol" name="vol" min="0" max="50" />
+          <input type="submit" />
+          <input type="color" />
+        </form>
+
         <div>filter icon goes here</div>
       </section>
 

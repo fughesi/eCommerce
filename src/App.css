@@ -1,11 +1,40 @@
 :root {
   /* COLORS */
-  --white: #fff;
-  --black: #000;
+  --white: hsl(0, 0%, 100%);
+  --grey: hsl(0, 0%, 50%);
+  --black: hsl(0, 0%, 0%);
+  --fill: #222;
+  --linkHover: #1b4698;
+
+  --color1: #eeece8;
+  --color2: #c4bfb8;
+  --color3: #333533;
+  --color4: #202020;
+  --color5: #3061ff;
+  --color6: #ffbe03;
+  --color7: #0d96d6;
+  --color6: #ff8c00;
 
   /* SIZES */
   --p1: clamp(1rem, 0.8095rem + 0.9524vw, 2rem);
   --p2: clamp(1.5rem, 1.2619rem + 1.1905vw, 2.75rem);
+
+  /* WEIGHTS */
+  --reg: 300;
+  --bold: 700;
+
+  /* SHADOWS */
+  --textInset: 2px 3px 4px #fff, 0 0 0 #000;
+  --shadow1: 0px 2px 1px -1px #0002, 0px 1px 1px 0px #00000014,
+    0px 1px 3px 0px #00000012;
+  --shadow2: 0px 0px 10px #0005;
+  --shadow3: 0 0.3125rem 0.625rem #0007;
+  --shadow4: 0rem 0px 1rem var(--color6);
+  --shadow5: 0.1rem 2px 0.2rem #0009;
+  --outline: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px 0 #000, -1px -1px 0 #000;
+
+  /* RADIUS */
+  --rad1: 10px;
 
   /* BLUR */
   --blur: 1.75px;
@@ -25,6 +54,7 @@
 
 body {
   margin: 0;
+  padding: 0;
   font-family: "Oswald";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -41,6 +71,6 @@ button {
   border: none;
   border-radius: 0.4em;
 
-  padding: .5rem;
+  padding: 0.5rem;
   aspect-ratio: 2.2/1;
 }

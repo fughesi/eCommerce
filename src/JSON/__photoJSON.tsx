@@ -1,7 +1,14 @@
 import IMG from "./__photoIMPORTS";
 import { nanoid } from "nanoid";
 
-const Photos: {}[] = [
+const Photos: {
+  id: string;
+  category: string;
+  src: string;
+  alt: string;
+  name: string;
+  fee: number;
+}[] = [
   //  ----------- Black History -----------
   {
     id: nanoid(),
@@ -393,8 +400,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.BasketBallBombers,
-    alt:
-      "a bomb wearing shoes and hat and spinning a basketball in black and white",
+    alt: "a bomb wearing shoes and hat and spinning a basketball in black and white",
     name: "BasketBall Bombers",
     fee: 3,
   },
@@ -434,8 +440,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.BrooklynBaseball,
-    alt:
-      "a baseball character with bat ready to swing at a pitch in black and white",
+    alt: "a baseball character with bat ready to swing at a pitch in black and white",
     name: "Brooklyn Baseball",
     fee: 3,
   },
@@ -507,8 +512,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.Diver,
-    alt:
-      "a character in an oversized old-style diving helmet holding a sword in color",
+    alt: "a character in an oversized old-style diving helmet holding a sword in color",
     name: "Diver",
     fee: 3,
   },
@@ -572,8 +576,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.GameMachine,
-    alt:
-      "old gaming machine wearing hat and glasses and holding ice cream in color",
+    alt: "old gaming machine wearing hat and glasses and holding ice cream in color",
     name: "Game Machine",
     fee: 3,
   },
@@ -621,8 +624,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.GramophoneHead,
-    alt:
-      "oldstyle vintage record player wearing monocle and tophat in black and white",
+    alt: "oldstyle vintage record player wearing monocle and tophat in black and white",
     name: "Gramophone Head",
     fee: 3,
   },
@@ -702,8 +704,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.IceCreamTruck,
-    alt:
-      "an ice cream truck driven by a man with a mask holding a cone in color",
+    alt: "an ice cream truck driven by a man with a mask holding a cone in color",
     name: "Ice Cream Truck",
     fee: 3,
   },
@@ -711,8 +712,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.KillerMinibike,
-    alt:
-      "a character in a hockey mask riding a bike and holding a knife in color",
+    alt: "a character in a hockey mask riding a bike and holding a knife in color",
     name: "Killer Minibike",
     fee: 3,
   },
@@ -720,8 +720,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.KillerSkater,
-    alt:
-      "a masked character riding a skateboard and holding a bloody knife in color",
+    alt: "a masked character riding a skateboard and holding a bloody knife in color",
     name: "Killer Skater",
     fee: 3,
   },
@@ -785,8 +784,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.MrCoffee,
-    alt:
-      "a coffee character wearing glasses and riding a skateboard in black and white",
+    alt: "a coffee character wearing glasses and riding a skateboard in black and white",
     name: "Mr Coffee",
     fee: 3,
   },
@@ -858,8 +856,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.PlayerSkater,
-    alt:
-      "a man  with a controller for a head holding a wrench and soda riding a skateboard in color",
+    alt: "a man  with a controller for a head holding a wrench and soda riding a skateboard in color",
     name: "Player Skater",
     fee: 3,
   },
@@ -963,8 +960,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.SkaterBomb,
-    alt:
-      "a bomb character riding a skateboard holding a soda in black and white",
+    alt: "a bomb character riding a skateboard holding a soda in black and white",
     name: "Skater Bomb",
     fee: 3,
   },
@@ -1076,8 +1072,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.StreetBomber,
-    alt:
-      "a spraypaint can wearing hat and riding skateboard with boombox in color",
+    alt: "a spraypaint can wearing hat and riding skateboard with boombox in color",
     name: "Street Bomber",
     fee: 3,
   },
@@ -1109,8 +1104,7 @@ const Photos: {}[] = [
     id: nanoid(),
     category: "Charicatures",
     src: IMG.Surprise,
-    alt:
-      "a jack in the box character wearing mask and top hat holding knife in color",
+    alt: "a jack in the box character wearing mask and top hat holding knife in color",
     name: "Surprise",
     fee: 3,
   },

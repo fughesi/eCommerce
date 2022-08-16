@@ -9,15 +9,15 @@
     "test": "npx jasmine"
   },
   "dependencies": {
-    "esbuild-darwin-64": "^0.14.49",
-    "esbuild-darwin-arm64": "^0.14.49",
-    "esbuild-dev-server-darwin-x64": "^0.3.0",
+    "@types/jasmine": "^4.0.3",
+    "@types/pngjs": "^6.0.1",
+    "@types/react-router": "^5.1.18",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
     "react-router-dom": "^6.3.0"
   },
   "devDependencies": {
-    "@types/react": "^18.0.0",
+    "@types/react": "^18.0.17",
     "@types/react-dom": "^18.0.0",
     "@vitejs/plugin-react": "^2.0.0",
     "jasmine-browser-runner": "^1.1.0",

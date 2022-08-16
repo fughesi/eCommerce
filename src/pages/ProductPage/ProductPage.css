@@ -1,6 +1,27 @@
-@import url('../../App.css');
+@import url("../../App.css");
+
+.productPageMain {
+  display: grid;
+
+  height: 100vh;
+  width: 100vw;
+}
+.productPageMain > section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.productSearch {
+  margin-top: 2rem;
+  width: 80%;
+}
+
+#SearchBar {
+  border-radius: 5px;
+}
 
 .blur {
-    filter: blur(var(--blur));
-    transition: 1500ms ease-in-out;
-  }
+  filter: blur(var(--blur));
+  transition: 1500ms ease-in-out;
+}

@@ -1,10 +1,10 @@
 .indexPageMain {
   display: grid;
-  min-height: 100vh;
+  gap: 1rem;
   width: 100vw;
+  min-height: 100vh;
   padding: 1rem;
   place-items: center;
-
   transition: 1000ms ease-in-out;
 }
 .indexPageMain > section {
@@ -13,72 +13,75 @@
 
 .indexTopCardSection {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
   justify-content: center;
   gap: 2rem;
 }
 
-.things,
-.indexTopCardSection input {
+.topHeroElement {
   width: 100%;
-  border-radius: var(--rad1);
+  aspect-ratio: 1/0.5;
   background-color: var(--color2);
 }
 
-.things {
-  aspect-ratio: 1/0.5;
-}
-
-.monkey {
-  animation: float 5s ease-in-out infinite;
-  filter: drop-shadow(22px);
-}
-
-@keyframes float {
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-15px);
-  }
-}
-
-.indexTopCardSection input {
-  border: 0;
-  padding: 1rem;
-}
-
 .indexFilterSection {
-  background-color: burlywood;
-
-  font-size: small;
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
 }
 
 .indexPhotoGrid {
-  background-color: aquamarine;
-  font-size: small;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.indexPhotoGrid > button {
+  width: 5rem;
 }
 
 .indexCallToActionPhoto {
-  background-color: blueviolet;
-  font-size: small;
-}
-
-.indexNewestStyles {
-  background-color: chartreuse;
-  font-size: small;
+  background-color: var(--color2);
+  aspect-ratio: 1/0.3;
 }
 
 .indexEmailSignup {
-  background-color: tomato;
-  font-size: small;
+  display: flex;
+  flex-direction: column;
 }
 
+.indexEmailSignup > h4 {
+  margin: 2rem 0 0;
+}
+
+.emailSignupGroup {
+  width: 100%;
+  margin: 1rem 1rem 2rem;
+}
+
+#emailSignup,
+#emailSignupSubmit {
+  padding: 0.25rem;
+  height: 2rem;
+}
+
+#emailSignup {
+  width: 60%;
+}
+
+#emailSignupSubmit {
+  font-size: 0.9rem;
+  font-family: "SpaceMono";
+  border-radius: 0;
+}
 .indexSocialsFooter {
-  background-color: violet;
-  font-size: var(--p2);
+  background-color: var(--color2);
+  border-radius: 0;
+  width: 100vw;
+  aspect-ratio: 1/.9;
 }
 
 .blur {

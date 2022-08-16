@@ -30,4 +30,10 @@
   src: local("oswald-latin-300.woff2"),
     url(./resources/fonts/oswald-latin-700.woff2);
 }
-
+@font-face {
+  font-family: "SpaceMono";
+  font-style: normal;
+  font-display: block;
+  font-weight: 400;
+  src: local("SpaceMono.ttf"), url(./resources/fonts/SpaceMono.ttf);
+}

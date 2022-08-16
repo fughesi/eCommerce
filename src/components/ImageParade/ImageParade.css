@@ -1,0 +1,24 @@
+.imageParadeMain {
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.productMainPhoto {
+  width: 70%;
+  margin-top: 5rem;
+  aspect-ratio: 1/1.2;
+
+  border-radius: 5px;
+  background-color: var(--color2);
+
+}
+
+.parade {
+  height: 100px;
+  aspect-ratio: 1/1;
+  background-color: aliceblue;
+}

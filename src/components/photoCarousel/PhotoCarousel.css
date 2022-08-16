@@ -1,0 +1,36 @@
+.photoCarouselContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(auto, 150px));
+  place-content: center;
+  place-items: center;
+  padding: 0.5rem;
+  gap: 1rem;
+}
+
+.photoCarouselContainer > img {
+  width: 8.75rem;
+  aspect-ratio: 1/1;
+  background-color: var(--color2);
+
+  text-align: center;
+  box-shadow: var(--shadow3);
+}
+
+.dotContainer {
+  display: flex;
+}
+
+.dots {
+  height: 0.8rem;
+  aspect-ratio: 1/1;
+  margin-right: 0.25em;
+
+  border-radius: 50%;
+  background-color: grey;
+
+  transition: filter 150ms ease-in-out;
+}
+
+.dots:hover {
+  filter: brightness(1.2);
+}
